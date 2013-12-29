@@ -102,7 +102,7 @@ static void init(void) {
   const bool animated = true;
   window_stack_push(window, animated);
 
-  tick_timer_service_subscribe(MINUTE_UNIT, update_time);
+  tick_timer_service_subscribe(SECOND_UNIT, update_time);
 }
 
 static void deinit(void) {
